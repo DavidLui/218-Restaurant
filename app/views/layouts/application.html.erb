@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>OK 218</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <%= csrf_meta_tags %>
+  <style>
+	.address{
+	    width: 100%; 
+		height: 100%;
+		margin: 0px;  
+		font-size: 15px;
+		background-color: rgb(0,0,0,.5); 
+		padding: 0px;
+		margin-top: 300px;
+	}
+	table { 
+		border-spacing: 100px;
+		border-collapse: separate;
+	}
+	
+	.menu {
+		-webkit-column-count: 3; /* Chrome, Safari, Opera */
+		-moz-column-count: 3; /* Firefox */
+		column-count: 3;
+
+		-webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+		-moz-column-gap: 40px; /* Firefox */
+		column-gap: 40px;
+	}
+  </style>
+</head>
+<body>
+    <div class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm">
+      <a class="navmenu-brand visible-md visible-lg" href="#"><font face="verdana" size="7" color="white">迎 218 旺</font></a>
+	  <a class="navmenu-brand visible-md visible-lg" href="#"><font face="verdana" size="9" color="white">Restaurant</font></a>
+
+	  <hr><br>
+		  <center>
+		  <div class="menu-bar" data-example-id="simple-nav-stacked">
+			<ul class="nav nav-pills nav-stacked red">
+			  <li role="presentation" class="active"><a href="#">Menu</a></li>
+			  <li role="presentation"><a href="#">Lunch</a></li>
+			  <li role="presentation"><a href="#">Dinner</a></li>
+			</ul>
+			<div class="address">
+				<p>218 Grand Street</p>
+				<p>New York, NY 10013</p>
+				<p>Tel: 212-226-8039</p>
+			</div>
+		  </div>
+		  
+		  <center>
+	 </a>
+    </div>
+
+<%= yield %>
+
+</body>
+</html>
